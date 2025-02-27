@@ -1,0 +1,206 @@
+:root {
+    --color-primary: #4bb6fd;
+    --color-secondary: #dce61a;
+    --color-tertiary: #0bae3c;
+    --color-button: #fe652b;
+    --color-button-hover: #e55720;
+    --color-text: #444444;
+    --color-white: #FFFFFF;
+    --color-red: #FF0000;
+}
+
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--color-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    padding: 10px
+}
+
+/* Banner */
+.header-banner {
+    flex: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0 0;
+}
+
+/* Sección de entrada */
+.input-section {
+    flex: 50%;
+    background-color: var(--color-secondary);
+    border: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+}
+
+/* Títulos */
+.main-title {
+    font-size: 48px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 900;
+    font-style:bold;
+    color: var(--color-white);
+}
+
+.section-title {
+    font-family: "Inter", serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--color-tertiary);
+    margin: 10px 0;
+    text-align: center;
+}
+
+.amigo-secreto {
+color: var(--color-red);
+font-family: Arial, Helvetica, sans-serif;
+font-size: 24px;
+margin: 10px;
+text-align: center;
+bottom:0px;
+padding:20px;
+margin-top: -15px;
+margin-bottom :60px;
+}
+
+/* Contenedores de entrada y botón */
+.input-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 300px;
+    margin-top: 10px;
+}
+
+.input-name {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #000;
+    border-radius: 25px 25px 25px 25px;
+    font-size: 24px;
+    color: #0509df;
+}
+
+/* Estilos de entrada de texto */
+.input-title {
+    flex: 1;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 2px solid #333;
+    border-right: none;
+    border-radius: 25px 0 0 25px;
+    font-family: "Merriweather", serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Listas */
+ul {
+    list-style-type: none;
+    color: blue;
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.lista-amigos{
+    font-family: "Inter", serif;
+    font-size: 20px;
+    color: rgb(55, 7, 3);
+    margin: 10px 0;
+    text-align: center;
+    flex-direction:column;
+}
+
+.result-list {
+    margin-top: 15px;
+    color: #0509df;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Estilos de botón */
+button {
+    padding: 15px 30px;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    border: 2px solid #000;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.39);
+    cursor: pointer;
+}
+
+.button-container {
+    display: flex;
+   padding : 15px, 30px;
+    width: 400px;
+    margin-bottom: 5%;
+    flex-direction:row;
+    justify-content:space-between;
+    gap: 10px;
+}
+
+.button-add {
+    background-color: var(--color-tertiary);
+    color: var(--color-white);
+    border-radius: 15px 15px 15px 15px;
+    padding:10px 20px;
+    height: 80px;
+    width: 100px;
+}
+
+.button-add:hover {
+    background-color: #a1a1a1;
+}
+
+/* Botón de sortear título */
+.button-draw {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 80px;
+    padding: 10px 20px;
+    color: var(--color-white);
+    background-color:#4bb6fd;
+    font-size: 16px;
+    border-radius: 15px 15px 15px 15px;
+}
+
+.button-draw img {
+    margin-right: 40px;
+}
+
+.button-draw:hover {
+    background-color: var(--color-button-hover);
+}
+.button-erase{
+    background-color:#FF0000;
+    color: var(--color-white);
+    border-radius: 15px 15px 15px 15px;
+    padding:10px 20px;
+    height: 80px;
+    width: 150px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    text-align: center;
+}
